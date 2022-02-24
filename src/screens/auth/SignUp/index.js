@@ -17,9 +17,10 @@ export default function SignUp({ navigation }) {
   const dispatch = useDispatch()
 
   const handleRegister = () => {
-      dispatch(register(email,password)).then(()=>{
-          console.log('success register')
-      })
+      // dispatch(register(email,password)).then(()=>{
+      //     console.log('success register')
+      // })
+      navigation.navigate('preferences')
   }
   return (
 
