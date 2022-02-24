@@ -4,6 +4,8 @@ import { createStackNavigator } from '@react-navigation/stack'
 import Welcome from '../../screens/auth/welcome'
 import SignIn from '../../screens/auth/SignIn'
 import SignUp from '../../screens/auth/SignUp'
+import ForgotPassword from '../../screens/auth/ForgotPassword'
+import ConfirmEmailScreen from '../../screens/auth/ConfirmEmail'
 
 const { Screen, Navigator } = createStackNavigator()
 export default function AuthNav() {
@@ -14,6 +16,8 @@ export default function AuthNav() {
           <Screen name='welcome' component={Welcome}/>
           <Screen name='signin' component={SignIn}/>
           <Screen name='signup' component={SignUp}/>
+          <Screen name='forgotPassword' component={ForgotPassword}/>
+          <Screen name='confirmationEmail' component={ConfirmEmailScreen}/>
       </Navigator>
     )
 }

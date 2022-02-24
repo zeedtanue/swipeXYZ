@@ -4,7 +4,7 @@ import styles from './styles'
 import { TextInput } from 'react-native-paper'
 import { login } from '../../../redux/actions/auth'
 import { useDispatch } from 'react-redux'
-export default function SignIn() {
+export default function SignIn({navigation}) {
 
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
@@ -42,10 +42,16 @@ export default function SignIn() {
         secureTextEntry
 
       />
+      <Text style={styles.forgotText} onPress={()=> navigation.navigate('forgotPassword')}>Forgot Password?</Text>
       <TouchableOpacity style={styles.buttonOrrange} onPress={()=>handleLogin()}>
           <Text style={styles.buttonText}>Login</Text>
       </TouchableOpacity>
-
+      <View style={styles.row}>
+        <Text>Don't have an account?</Text>
+        <Text 
+          onPress={()=>navigation.navigate('signup')}
+          style={{ color:'#F15223' }}>   Sign Up</Text>
+        </View>
     </View>
   )
 }

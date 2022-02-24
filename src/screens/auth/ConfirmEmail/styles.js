@@ -1,3 +1,4 @@
+
 import { StyleSheet } from "react-native";
 import {widthPercentageToDP as wp, heightPercentageToDP as hp} from "react-native-responsive-screen"
 const styles = StyleSheet.create({
@@ -9,8 +10,9 @@ const styles = StyleSheet.create({
 
     },
     title:{
+        alignSelf: "center",
         fontWeight: "bold",
-        fontSize: hp('4%'),
+        fontSize: hp('2.9%'),
         lineHeight:hp('4%'),
         marginTop: hp('2%'),
         marginBottom: hp('1%'),
@@ -19,8 +21,9 @@ const styles = StyleSheet.create({
     },
     subTitle: {
         lineHeight:hp('4%'),
-        marginTop: hp('2%'),
-        fontSize: hp('3%'),
+        marginTop: hp('1%'),
+        fontSize: hp('2%'),
+        textAlign: 'center',
         fontWeight: "100",
         color: '#040415',
         marginBottom:hp('3%')
@@ -52,11 +55,38 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         alignSelf: "center"
     },
-    forgotText: {
-        color: '#F15223',
-        alignSelf:'flex-end',
-        padding: 5,
-        paddingBottom: hp('3%')
+    checkboxContainer: {
+        alignSelf: 'center',
+        flexDirection: "row",
+        marginBottom: 20,
+      },
+    checkbox: {
+        alignSelf: "center",
+        borderColor:'#F15223'
+      },
+    outerCircle: {
+        borderWidth:hp('6%'),
+        height: hp('16%'),
+        width: hp('16%'),
+        alignSelf:"center",
+        alignItems: 'center',
+        justifyContent: "center",
+        borderRadius: hp('15%'),
+        borderColor: '#fceee9'
+    },
+    innerCircle: {
+        borderWidth:hp('5%'),
+        height: hp('10%'),
+        width: hp('10%'),
+        borderRadius: hp('15%'),
+        borderColor: '#FD7753'
+    },
+    image: {
+        height: hp('4%'),
+        width: hp('4%'),
+        alignSelf:"center",
+        margin: -12,
+
     }
     
 });

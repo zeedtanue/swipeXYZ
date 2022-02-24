@@ -49,6 +49,19 @@ const styles = StyleSheet.create({
         fontSize: hp('2%'),
         padding: hp('2%')
     },
+    row:{
+        flexDirection: "row",
+        alignSelf: "center"
+    },
+    checkboxContainer: {
+        alignSelf: 'center',
+        flexDirection: "row",
+        marginBottom: 20,
+      },
+    checkbox: {
+        alignSelf: "center",
+        borderColor:'#F15223'
+      },
     
 });
 
