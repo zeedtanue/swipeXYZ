@@ -20,13 +20,27 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "com.revorium.swipexyz",
+      "googleServicesFile": "./google-services.json",
+      "permissions": [
+      ],
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "config": {
+        "firebase": {
+          "apiKey": "AIzaSyDzspFOEPQoI9JyRQes9vGewH_S0oeJJDQ",
+          "authDomain": "tiktok-swipexyz.firebaseapp.com",
+          "projectId": "tiktok-swipexyz.firebaseapp.com",
+          "storageBucket": "tiktok-swipexyz.appspot.com",
+          "messagingSenderId": "958708594798",
+          "appId": "1:958708594798:web:a2fdc48d5b574115150e7f"
+        }
+      }
     }
   }
 }
