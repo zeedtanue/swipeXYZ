@@ -13,6 +13,7 @@ const styles = StyleSheet.create({
         fontSize: hp('4%'),
         lineHeight:hp('4%'),
         alignSelf: "center",
+        marginTop:hp('15%'),
         marginBottom: hp('1%'),
 
 
@@ -42,7 +43,7 @@ const styles = StyleSheet.create({
         alignSelf:"center",
         alignItems: "center",
         position: 'relative',
-        marginBottom: hp('2%')
+        marginTop: hp('10%')
     },
     buttonText: {
         color: 'white',

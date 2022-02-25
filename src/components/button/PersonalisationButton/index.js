@@ -1,10 +1,14 @@
-import { View, Text } from 'react-native'
+import { View, Text, TouchableOpacity } from 'react-native'
 import React from 'react'
+import styles from './styles'
 
-export default function PersonilasationButton({text}) {
+export default function PersonilasationButton({text, onPress, selected}) {
   return (
-    <View style={{ borderWidth:.2, padding: 10, borderRadius:20, width:100, maxHeight: 200, margin: 10 }}> 
-      <Text style={{ alignSelf:'center', fontWeight:'bold' }}>{text}</Text>
-    </View>
+    <TouchableOpacity 
+      style={[styles.container, selected? styles.selected : styles.notSelected]}
+      onPress={onPress}
+    > 
+      <Text style={[styles.text, selected? styles.selectText: styles.notSelectText]}>{text}</Text>
+    </TouchableOpacity>
   )
 }
