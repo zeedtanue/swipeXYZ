@@ -5,6 +5,7 @@ import { Feather } from '@expo/vector-icons';
 import CameraScreen from '../../screens/camera';
 import ProfileScreen from '../../screens/profile';
 import firebase from 'firebase';
+import MessageNav from '../message';
 
 const Tab = createMaterialBottomTabNavigator()
 
@@ -51,7 +52,7 @@ export default function HomeScreen() {
         />
         <Tab.Screen 
             name='message'
-            component= {emptyScreen}
+            component= {MessageNav}
             options={{
                 tabBarIcon: ({ color }) => ( <Feather name="message-square" size={24} color={color} /> )
                 
