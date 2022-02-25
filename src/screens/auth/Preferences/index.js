@@ -4,13 +4,30 @@ import styles from './styles'
 import TopLeftButton from '../../../components/button/TopLeftButton'
 import PersonilasationButton from '../../../components/button/PersonalisationButton'
 
-export default function Preferences({ navigation }) {
+import { useDispatch } from 'react-redux'
+import { register } from '../../../redux/actions/auth'
+
+
+
+
+export default function Preferences({ navigation, route }) {
+  const dispatch = useDispatch()
+
   const [isSelectTravel, setIsSelectTravel] = useState(false)
   const [isSelectBusiness, setIsSelectBusiness] = useState(false)
   const [isSelectTechnology, setIsSelectTechnology] = useState(false)
   const [isSelectMedia, setIsSelectMedia] = useState(false)
   const [isSelectMusic, setIsSelectMusic] = useState(false)
+  const params = route.params
 
+  const handleRegister = () => {
+    dispatch(register(params.email,params.password)).then(()=> {
+      console.log('Success')
+    })
+  }
+
+
+  console.log(params)
   return (
     <View style={styles.container}>
      <TopLeftButton onPress={()=>navigation.goBack()}/>

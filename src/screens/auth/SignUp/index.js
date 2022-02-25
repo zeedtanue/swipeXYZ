@@ -20,7 +20,7 @@ export default function SignUp({ navigation }) {
       // dispatch(register(email,password)).then(()=>{
       //     console.log('success register')
       // })
-      navigation.navigate('preferences')
+      navigation.navigate('preferences', {email,password})
   }
   return (
 
