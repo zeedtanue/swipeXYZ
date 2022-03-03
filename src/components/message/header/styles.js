@@ -4,23 +4,21 @@ import {widthPercentageToDP as wp, heightPercentageToDP as hp} from "react-nativ
 const styles = StyleSheet.create({
     container: {
         backgroundColor: "white",
-        justifyContent:"center",
         padding: wp('10%'),
         position: 'absolute',
         top:0,
-        marginTop: hp('8%')
+        marginTop: hp('5%'),
+        flexDirection: "row",
+
+        
     },
-    buttonContainer: {
-        borderColor: '#0000001A',
-        borderRadius:15,
-        borderWidth:.5,
-        padding:20,
-        width:65,
-        height:65,
-        position: 'absolute',
-        top:0,
-        margin:hp('5%'),
-        marginTop: hp('8%')
+    text: {
+        fontWeight: "bold",
+        fontSize: hp('3%'),
+        marginLeft: wp('20%'),
+    },
+    icon: {
+        marginLeft: wp('28%')
     }
     
     

@@ -3,12 +3,9 @@ import { StyleSheet } from "react-native";
 import {widthPercentageToDP as wp, heightPercentageToDP as hp} from "react-native-responsive-screen"
 const styles = StyleSheet.create({
     container: {
+        flex: 1,
         backgroundColor: "white",
-        justifyContent:"center",
-        padding: wp('10%'),
-        position: 'absolute',
-        top:0,
-        marginTop: hp('8%')
+        padding: wp('10%')
     },
     buttonContainer: {
         borderColor: '#0000001A',
@@ -21,6 +18,9 @@ const styles = StyleSheet.create({
         top:0,
         margin:hp('5%'),
         marginTop: hp('8%')
+    },
+    contentContainer: {
+        marginTop: hp('10%')
     }
     
     
